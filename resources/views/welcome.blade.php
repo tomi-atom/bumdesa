@@ -42,11 +42,10 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li><a href="#data"><b>DATA</b></a></li>
-                    <li><a href="#fitur"><b>FITUR</b></a></li>
                     <li><a href="#promethee"><b>PROMETHEE</b></a></li>
                     <li><a href="#ranking"><b>RANKING</b></a></li>
                     <li><a href="#tentang"><b>TENTANG</b></a></li>
-                    <li><a href="{{ url('/faq') }}"><b>FAQ</b></a></li>
+
                     @if (Route::has('login'))
                     @auth
                     <li class="get-started">
@@ -70,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
                     <h1 data-aos="fade-up">Sistem Pendukung Keputusan</br></h1>
-                    <h1 style="font-size: 22px;" data-aos="fade-up" data-aos-delay="400">Penentuan Lokasi Embung
+                    <h1 style="font-size: 22px;" data-aos="fade-up" data-aos-delay="400">Penentuan Mahasiswa Berprestasi
                     </h1>
                     <p style="font-size: 14px;  margin-bottom: 40px; text-align:justify;" data-aos="fade-up" data-aos-delay="400">dirancang menggunakan metode PROMETHEE, PROMETHEE <i>(Preference Ranking Organization Method for Enrichment Evaluation)</i> adalah metodologi untuk mengevaluasi alternatif dengan kriteria yang diberikan dan membuat peringkat alternatif untuk keputusan akhir.
                     </p>
@@ -88,26 +87,7 @@
     <!-- =======   MAIN SECTION   ======= -->
     <main id="main">
         <!-- ======= CLIENT SECTION ======= -->
-        <section id="clients" class="clients clients mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <img src="{{ asset('img/clients/laravel1.png') }}" class="img-fluid" alt="" data-aos="zoom-in">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <img src="{{ asset('img/clients/carto1.png') }}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <img src="{{ asset('img/clients/php1.png') }}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <img src="{{ asset('img/clients/promethee.png') }}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= END CLIENT SECTION ======= -->
-        <!-- =======    DATA SECTION    ======= -->
+
         <section id="data" class="counts">
             <div class="container">
                 <div class="row">
@@ -153,55 +133,7 @@
             </div>
         </section>
         <!-- =======  END DATA SECTION  ======= -->
-        <!-- =======   FITUR  SECTION   ======= -->
-        <section id="fitur" class="services">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>fitur</h2>
-                    <p style="font-size: 15px;">Beberapa fitur pada sistem pendukung keputusan penentuan lokasi embung menggunakan metode promethee.</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <div class="icon"><i class="bx bx-map-alt"></i></div>
-                            <div class="title">
-                                <p>Carto Map</p>
-                            </div>
-                            <p class="description">Carto Map / CartoDB adalah sistem yang menyediakan layanan untuk mengolah data spasial, seperti pengelolaan basis data spasial, analisis data spasial, dan pemetaan. Dan pada sistem pendukung keputusan ini hasil pemeringkatan alternatif ditampilkan secara visual berupa peta beserta beberapa info data alternatif.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <div class="title">
-                                <p>Data Dinamis</p>
-                            </div>
-                            <p class="description">Menampilkan data secara dinamis dari hasil perhitungan menggunakan metode promethee, dan juga menampilkan beberapa data pendukung dari database sehingga dapat membantu user dalam mengetahui dan mengelola data untuk perhitungan, berupa data table dan data lainnya.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                            <div class="icon"><i class="bx bx-infinite"></i></div>
-                            <div class="title">
-                                <p>Metode Promethee</p>
-                            </div>
-                            <p class="description">Metode outranking yang membandingkan beberapa kemungkinan alternatif (pada kriteria) dengan kriteria dasar.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                            <div class="icon"><i class="bx bx-laptop"></i></div>
-                            <div class="title">
-                                <p>Web Responsive</p>
-                            </div>
-                            <p class="description">Web didesain secara responsive, sehingga web akan beradaptasi jika dibuka dari perangkat mobile berukuran kecil maupun perangkat komputer meja dengan ukuran monitor besar. Ukuran huruf, user interface, gambar dan tata letak akan menyesuaikan dengan lebar layar dan resolusi layar monitor yang tersedia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- ======= END FITUR SECTION  ======= -->
         <!-- ======= PROMETHEE SECTION  ======= -->
         <section id="promethee" class="features">
@@ -210,8 +142,8 @@
                     <h2>promethee</h2>
                     <p style="font-size: 15px;">Berikut adalah beberapa data yang dapat ditampilkan dari metode promethee ini.</p>
                 </div>
-                <div class="row" data-aos="fade-up" data-aos-delay="300">
-                    <div class="col-lg-3 col-md-4">
+                <div class="row" data-aos="fade-up" data-aos-delay="300" >
+                    <div class="col-lg-3 col-md-5">
                         <div class="icon-box">
                             <i class="ri-bubble-chart-line" style="color: #ffa426;"></i>
                             <h3>
@@ -235,14 +167,7 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                        <div class="icon-box">
-                            <i class="ri-pin-distance-fill" style="color: #ffa426;"></i>
-                            <h3>
-                                <div style="cursor:pointer" data-toggle="modal" data-target="#dataPeta">Data Peta</div>
-                            </h3>
-                        </div>
-                    </div>
+
                 </div>
                 <!-- Modal Data Kriteria -->
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="dataKriteria" aria-hidden="true">
@@ -304,13 +229,13 @@
                                             {
                                                 echo '<tr align="center">';
                                                 echo '<td align="center">' . $alternatif->nama . '</td>';
-                                                
+
                                                 $getevals=Kustom::JoinanTabel($alternatif->id);
-                                                
+
                                                 foreach ($getevals as $evals) {
                                                     echo '<td>' . $evals->nilai . '</td>';
                                                 }
-                                                
+
                                                 echo '</tr>';
                                             }
                                         @endphp
@@ -370,19 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal Data Peta -->
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="dataPeta" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                        <div style="border-top:2px solid #ffa426 !important;" class="modal-content">
-                            <div style="box-shadow:0 4px 8px rgba(0, 0, 0, 0.03); border-radius:3px" class="card-body">
-                                <span style="padding:18px; font-size:14px;">Data Peta</span>
-                                <div style="padding:15px; border-radius:5px; font-size:14px;">
-                                    <iframe width="100%" height="475" frameborder="0" src="https://prawito.carto.com/builder/0a97a764-9180-4d4b-8c9e-c04c0421e6db/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
         <!-- ======= END PROMETHEE SECTION ======= -->
@@ -461,8 +374,8 @@
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 text-lg-left text-center">
                     <div class="copyright">
-                        &copy; Copyright <strong>Vesperr</strong>
-                        | Designed by BootstrapMade | Contact Center : +6282-1379-25172</a>
+                        &copy; Copyright <strong>Fathul 2021</strong>
+                        | Designed by BootstrapMade </a>
                         <!-- All the links in the footer should remain intact. -->
                         <!-- You can delete the links only if you purchased the pro version. -->
                         <!-- Licensing information: https://bootstrapmade.com/license/ -->
