@@ -12,9 +12,7 @@
             <li class="nav-item {{ (request()->is('home')) ? 'active' : '' }}"><a class="nav-link" href="{{route('home')}}"><i class="fas fa-fire"></i> <span>Home</span></a>
             </li>
             <li>
-            <li class="nav-item {{ (request()->is('admin/semarang')) ? 'active' : '' }}"><a class="nav-link" href="{{route('semarang.read')}}"><i class="fas fa-map-marker-alt"></i> <span>Peta
-                        Semarang</span></a>
-            </li>
+
             <li class="menu-header">Processing</li>
             <li class="dropdown {{ (request()->is('admin/data*')) ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i>
@@ -74,8 +72,7 @@
             <li class="nav-item {{ Request::is('admin/user*') ? 'active' : null }}"><a href="{{route('pengguna.read')}}" class="nav-link"><i class="far fa-user"></i><span>Users</span></a>
             </li>
             @endif
-            <li class="nav-item {{ Request::is('/bantuan') ? 'active' : null }}"><a href="{{route('bantuan.read')}}" class="nav-link"><i class="fas fa-lightbulb"></i><span>Bantuan</span></a>
-            </li>
+
         </ul>
     </aside>
 </div>

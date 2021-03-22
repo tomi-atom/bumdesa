@@ -6,14 +6,14 @@
     <div class="form-content">
         <div class="form-items">
             <h4><b>{{ __('Masuk') }}</b></h4>
-            <p style="font-size: 14px; margin-bottom:10px;">Bagi yang sudah terdaftar, silakan masuk (login)</p>
+            <p style="font-size: 14px; margin-bottom:10px;">Silakan masuk (login)</p>
             @if (session('status'))
                 <div class="alert alert-success" role="alert">
                 {{ session('status') }}
                 </div>
             @endif
             <div class="page-links">
-                <a href="{{ route('login') }}" class="active">Masuk</a><a href="{{ route('register') }}">Daftar</a>
+                <a href="{{ route('login') }}" class="active">Masuk</a>
             </div>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
