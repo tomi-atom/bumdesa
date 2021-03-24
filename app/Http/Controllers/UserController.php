@@ -27,7 +27,7 @@ class UserController extends Controller
 
         // $arrayall = Kustom::LeavingEntering();
         $arraynet = Kustom::Net();
-        return view('welcome', compact(['preferensis', 'kriterias', 'data', 'prefs', 'datas', 'arraynet']));
+        return view('auth.login', compact(['preferensis', 'kriterias', 'data', 'prefs', 'datas', 'arraynet']));
     }
 
     public function faq()

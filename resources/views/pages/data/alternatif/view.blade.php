@@ -104,7 +104,7 @@
             <div class="card card-primary">
                 <div class="card-body">
                     <button style="background-color: #3460df;line-height:26px;" class="btn btn-icon icon-left btn-primary" type="button" data-toggle="collapse" data-target="#tambahAlternatif" aria-expanded="false" aria-controls="tambahAlternatif">
-                        <i class="far fa-edit"></i> <b>TAMBAH ALTERNATIF</b>
+                        <i class="far fa-edit"></i> <b>TAMBAH </b>
                     </button>
                     <div class="collapse" id="tambahAlternatif">
                         <form action="{{route('alternatif.create')}}" method="POST" class="form">
@@ -252,7 +252,7 @@
                                 <div class="col-md">
                                 </div>
                             </div>
-                            <button style="line-height:26px;" class="btn btn-icon icon-left btn-info" type="submit"><i class="fas fa-info-circle"></i> <b>PROSES ALTERNATIF</b></button>
+                            <button style="line-height:26px;" class="btn btn-icon icon-left btn-info" type="submit"><i class="fas fa-info-circle"></i> <b>PROSES </b></button>
                         </form>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                             <thead style="text-align:center;">
                                 <tr>
                                     <th>NO</th>
-                                    <th>NAMA ALTERNATIF</th>
+                                    <th>NAMA </th>
                                     <th>KODE</th>
                                     <th>OPSI</th>
                                 </tr>
@@ -347,7 +347,7 @@
                             <tfoot style="text-align:center; color:#666">
                                 <tr>
                                     <th>NO</th>
-                                    <th>NAMA ALTERNATIF</th>
+                                    <th>NAMA </th>
                                     <th>KODE</th>
                                     <th>OPSI</th>
                                 </tr>
